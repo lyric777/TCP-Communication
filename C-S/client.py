@@ -34,7 +34,7 @@ while True:
     data = input('>')
     if data == 'exit':
         break
-    sock.send(data)            # 发送给服务器的数据
+    sock.send(data.encode())            # 发送给服务器的数据
     data = sock.recv(1024)  # 接收数据
     if data == 'exit':
         break
