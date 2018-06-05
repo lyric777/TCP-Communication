@@ -14,7 +14,7 @@ except socket.error as msg:
 print('Socket Created')
 
 host = '169.254.200.118'  # IP地址一致，指向服务器地址
-port = 222222
+port = 22222
 
 try:
     remote_ip = socket.gethostbyname(host)
