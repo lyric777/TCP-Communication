@@ -31,7 +31,7 @@ while True:
     count = 0
     while True:
         data = conn.recv(recv_buffer)
-        recved_size = recved_size + len(data)  # 虽然buffer大小是4096，但不一定能收满4096
+        recved_size = recved_size + len(data) 
         print("receive:" + str(len(data)))
         fd.write(data)
         if recved_size == filesize:
